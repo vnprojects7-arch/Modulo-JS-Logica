@@ -1,7 +1,13 @@
 const prompt = require("prompt-sync") ()
 
 let saldo = Number (prompt("quanto tem de saldo ?"));
+
 let pix = Number (prompt ("qual o valor do pix ?"))
+while (pix <= 0 || isNaN (pix)) {
+    console.log ("valor invalido.")
+    pix = Number (prompt ("qual o valor do pix ?"))
+}
+
 let hora = Number(prompt ("que horas sao ?"))
 
 if (saldo >= pix) {
