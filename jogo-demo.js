@@ -30,7 +30,7 @@ while (jogando) {
   } else if (local === "vila") {
     console.log("");
     console.log("[VILA] Um velho pescador te entrega uma moeda furada: 'Não vale nada. Guarde mesmo assim.'");
-    if (inventario.includes("moeda furada") === false ) {
+    if (inventario.includes("moeda furada") === false && inventario.includes("corda") === false ) {
       inventario.push("moeda furada");
     }
     console.log("1 - ir para a floresta   2 - ir para o poço");
