@@ -6,13 +6,21 @@
 
 const heroi = {
     nome:"Magno",
-    vida:10
+    vida: 10,
+    dano: 3,
+    veneno: 0,
+    inventario: [],
+    sorte: 0,
+    experiencia: 0,
+    mana: 0,
+    chancecritico: 0.2,
+    danoCritico: 2,
 }
 //Teste de alteração da propriedade,ao mudar a propriedade da CONSTANTE heroi
 //eu consigo sem problemas, pois estou mudando uma propriedade da constante
 // e nao a constante em si 
-console.log("antes de mudar: ", heroi)
+// console.log("antes de mudar: ", heroi)
 
-heroi.nome = "joao"
+// heroi.nome = "joao"
 
-console.log ("depois de mudar: ",heroi)
+// console.log ("depois de mudar: ",heroi)
